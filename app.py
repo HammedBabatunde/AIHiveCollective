@@ -63,62 +63,6 @@ def function4():
 
     return render_template('function4.html')
 
-# Function 5
-@app.route('/function5', methods=['GET', 'POST'])
-def function5():
-    if request.method == 'POST':
-        # Get user input
-        text = request.form['text']
-
-        # Perform function 5 on the input
-        result = function5_logic(text)
-
-        return render_template('function5.html', result=result)
-
-    return render_template('function5.html')
-
-# Function 6
-@app.route('/function6', methods=['GET', 'POST'])
-def function6():
-    if request.method == 'POST':
-        # Get user input
-        text = request.form['text']
-
-        # Perform function 6 on the input
-        result = function6_logic(text)
-
-        return render_template('function6.html', result=result)
-
-    return render_template('function6.html')
-
-# Function 7
-@app.route('/function7', methods=['GET', 'POST'])
-def function7():
-    if request.method == 'POST':
-        # Get user input
-        text = request.form['text']
-
-        # Perform function 7 on the input
-        result = function7_logic(text)
-
-        return render_template('function7.html', result=result)
-
-    return render_template('function7.html')
-
-# Function 8
-@app.route('/function8', methods=['GET', 'POST'])
-def function8():
-    if request.method == 'POST':
-        # Get user input
-        text = request.form['text']
-
-        # Perform function 8 on the input
-        result = function8_logic(text)
-
-        return render_template('function8.html', result=result)
-
-    return render_template('function8.html')
-
 # Function 1 logic
 def function1_logic(text):
     # Perform function 1 operations on the text
@@ -147,33 +91,6 @@ def function4_logic(text):
     result = text + '!'
     return result
 
-# Function 5 logic
-def function5_logic(text):
-    # Perform function 5 operations on the text
-    # Replace this with your actual function logic
-    result = text.replace('a', 'b')
-    return result
-
-# Function 6 logic
-def function6_logic(text):
-    # Perform function 6 operations on the text
-    # Replace this with your actual function logic
-    result = text.replace('x', 'y')
-    return result
-
-# Function 7 logic
-def function7_logic(text):
-    # Perform function 7 operations on the text
-    # Replace this with your actual function logic
-    result = text.strip()
-    return result
-
-# Function 8 logic
-def function8_logic(text):
-    # Perform function 8 operations on the text
-    # Replace this with your actual function logic
-    result = text.split()
-    return result
 
 if __name__ == '__main__':
     app.run(debug=True)
