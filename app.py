@@ -1,6 +1,23 @@
-from flask import Flask, render_template, request
+from azure.ai.textanalytics import TextAnalyticsClient
+from azure.core.credentials import AzureKeyCredential
+from dotenv import load_dotenv
+load_dotenv()
+import requests, os, uuid, json
+from flask import Flask, redirect, url_for, request, render_template, session
 
 app = Flask(__name__)
+
+language_key = os.getenv("LANGUAGE_KEY")
+language_endpoint = os.getenv("LANGUAGE_ENDPOINT")
+def authenticate_client():
+    ta_credential = AzureKeyCredential(language_key)
+    text_analytics_client = TextAnalyticsClient(
+            endpoint=language_endpoint, 
+            credential=ta_credential)
+    return text_analytics_client
+
+client = authenticate_client()
+
 
 # Index page
 @app.route('/')
@@ -91,6 +108,5 @@ def function4_logic(text):
     result = text + '!'
     return result
 
-
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True, use_reloader=True)
