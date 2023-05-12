@@ -20,7 +20,6 @@ endpoint = os.getenv("ENDPOINT")
 credentials1 = CognitiveServicesCredentials(subscription_key)
 client1 = ComputerVisionClient(endpoint, credentials1)
 
-
 def authenticate_client():
     ta_credential = AzureKeyCredential(language_key)
     text_analytics_client = TextAnalyticsClient(
