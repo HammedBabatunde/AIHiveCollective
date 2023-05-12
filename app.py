@@ -11,6 +11,7 @@ from msrest.authentication import CognitiveServicesCredentials
 
 app = Flask(__name__)
 
+#Getting Azure Credentials!
 language_key = os.getenv("LANGUAGE_KEY")
 language_endpoint = os.getenv("LANGUAGE_ENDPOINT")
 
