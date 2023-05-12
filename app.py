@@ -18,7 +18,6 @@ def authenticate_client():
 
 client = authenticate_client()
 
-
 # Index page
 @app.route('/')
 def index():
