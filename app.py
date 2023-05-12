@@ -61,7 +61,6 @@ def function3():
         result = function3_logic(text)
 
         return render_template('function3.html', result=result)
-
     return render_template('function3.html')
 
 # Function 4
