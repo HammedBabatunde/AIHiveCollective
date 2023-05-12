@@ -8,7 +8,6 @@ from flask import Flask, redirect, url_for, request, render_template, session
 from azure.cognitiveservices.vision.computervision import ComputerVisionClient
 from msrest.authentication import CognitiveServicesCredentials
 
-
 app = Flask(__name__)
 
 language_key = os.getenv("LANGUAGE_KEY")
