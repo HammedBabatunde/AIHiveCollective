@@ -66,6 +66,8 @@ def function1():
             )
     return render_template('function1.html')
 
+
+
 # Function 2
 @app.route('/keyphraseextration', methods=['GET', 'POST'])
 def function2():
@@ -90,6 +92,9 @@ def function2():
 
         #return render_template('function2.html', result=result)
     return render_template('function2.html')
+
+
+
 
 # Function 3
 @app.route('/imageanalysis', methods=['GET', 'POST'])
