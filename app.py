@@ -34,7 +34,6 @@ def function1():
         result = function1_logic(text)
 
         return render_template('function1.html', result=result)
-
     return render_template('function1.html')
 
 # Function 2
