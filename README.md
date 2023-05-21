@@ -1,4 +1,4 @@
-# AIHive Collectives
+# AIHive Collective
 
 ## Description
 
