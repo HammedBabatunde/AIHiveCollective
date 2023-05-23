@@ -56,9 +56,3 @@ Contributions are what make the proposed AIHive Collective community such an ama
 ## License
 
 Distributed under the MIT License. See `LICENSE` for more information.
-
-## Contact
-
-Email: salimoyinlola@gmail.com
-
-Project Link: https://github.com/salimcodes/AIHiveCollective/
