@@ -20,7 +20,7 @@ To get started with AIHive Collective, ensure you have the following installed:
 1. Clone the repository
 
 ```
-git clone https://github.com/salimcodes/AIHiveCollective/.git
+git clone https://github.com/HammedBabatunde/AIHiveCollective/.git
 ```
 
 
